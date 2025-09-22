@@ -21,7 +21,7 @@ class _UserDataState extends State<UserData>{
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Image.asset("lib/assets/images/rebels.jpeg"),
+          Image.asset("assets/rebels.jpeg"),
           SizedBox(height: 10.0),
            TextField(
              controller: nameCtrl,
