@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertestperron/src/practica_2/main_practica_2.dart';
 import 'package:fluttertestperron/src/practica_1/userData.dart';
+import 'package:fluttertestperron/src/mini_proyecto/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             bottom: const TabBar(
@@ -28,6 +29,8 @@ class MyApp extends StatelessWidget {
                 Tab(icon: Icon(Icons.looks_one)),
                 Tab(icon: Icon(Icons.looks_two)),
                 Tab(icon: Icon(Icons.looks_3)),
+                Tab(icon: Icon(Icons.add_circle)),
+
               ],
             ),
             title: const Text('Practices Tabs'),
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
               UserData(),
               MyHomePage(title: "Hola Mundo"),
               Icon(Icons.looks_3),
-
+              SplashScreen(),
             ],
           ),
         ),
